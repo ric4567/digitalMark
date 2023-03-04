@@ -11,4 +11,10 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalMark.Domain\DigitalMark.Domain.csproj" />
+    <ProjectReference Include="..\DigitalMark.DTO\DigitalMark.DTO.csproj" />
+    <ProjectReference Include="..\DigitalMark.Infra.Data\DigitalMark.Infra.Data.csproj" />
+  </ItemGroup>
+
 </Project>

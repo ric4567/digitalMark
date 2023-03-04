@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Biblioteca.Livro.Infra.Data.Contexts;
+using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
 
 namespace Biblioteca.Livro.App
@@ -7,13 +8,7 @@ namespace Biblioteca.Livro.App
     {
         public static IServiceCollection AddUsuarioServices(this IServiceCollection services)
         {
-            //Repositorios
-            services.AddScoped<ILivroRepository, LivroRepository>();
-          
-            //Handlers
-            services.AddScoped<IEditoraHandler, EditoraHandler>();
-
-            services.AddDbContext<LivroContext>(ServiceLifetime.Scoped);
+            services.AddDbContext<DigitalMarkContext>(ServiceLifetime.Scoped);
 
             return services;
         }
