@@ -11,7 +11,7 @@ namespace Biblioteca.Livro.Infra.Data.Mappings
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id);
             builder.Property(x => x.Name);
-            builder.HasOne(x => x.Client).WithOne();
+            builder.HasOne(x => x.Client).WithMany();
         }
     }
 }

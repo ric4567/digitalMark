@@ -2,14 +2,14 @@
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Emit;
 
-namespace Biblioteca.Livro.Infra.Data.Contexts
+namespace DigitalMark.Contexts
 {
     public class DigitalMarkContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseNpgsql("Data Source=JUPITER;Initial Catalog=Teste_Ricardo;Persist Security Info=True;User ID=developers;password=8UImoZhM;");
+            optionsBuilder.UseNpgsql("User ID=postgres;Password=postgres;Host=localhost;Port=5432;Database=postgres;");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "ozPU8KMwOlbQHpcE5qZTZ7CirEa+BWCC4ogaz+QJEsE=",
-  "Source": "WebApplication1",
-  "BasePath": "_content/WebApplication1",
+  "Hash": "LWTQao9v1Sc0x84aLsolcaQ1XPKBjb+w8oKKgNJs9No=",
+  "Source": "DigitalMark.API",
+  "BasePath": "_content/DigitalMark.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
