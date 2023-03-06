@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "c89v0bKeGOk5SCCvfIQ8VSmWVu/xGG5OBv08pPMKD+51U0Q6Zb2ES0KHcLZ715OyUhnLuzOjLkYCLSM1pFR19w==",
+  "dgSpecHash": "LGOLlu2JQeLYX/toiNHRd8bNu86cCHDGGz2T8IF4i7F7oAZb1NYbiNA+23v1U92iYIWELEQarXid9pL5icuqDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.API\\DigitalMark.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ricar\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\ricar\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\ricar\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.3\\microsoft.entityframeworkcore.7.0.3.nupkg.sha512",
     "C:\\Users\\ricar\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.3\\microsoft.entityframeworkcore.abstractions.7.0.3.nupkg.sha512",

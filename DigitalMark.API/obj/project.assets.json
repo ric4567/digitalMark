@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Flunt/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -519,6 +528,9 @@
       "DigitalMark.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DigitalMark.DTO": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/DigitalMark.Domain.dll": {}
         },
@@ -529,6 +541,9 @@
       "DigitalMark.DTO/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Flunt": "2.0.5"
+        },
         "compile": {
           "bin/placeholder/DigitalMark.DTO.dll": {}
         },
@@ -554,6 +569,19 @@
     }
   },
   "libraries": {
+    "Flunt/2.0.5": {
+      "sha512": "CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "type": "package",
+      "path": "flunt/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.5.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1334,7 +1362,7 @@
       "projectName": "DigitalMark.API",
       "projectPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.API\\DigitalMark.API.csproj",
       "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ricar\\source\\repos\\digitalMark\\DigitalMark.API\\obj\\",
+      "outputPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -11,7 +11,7 @@
         "projectName": "DigitalMark.App",
         "projectPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.App\\DigitalMark.App.csproj",
         "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricar\\source\\repos\\digitalMark\\DigitalMark.App\\obj\\",
+        "outputPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -90,7 +90,7 @@
         "projectName": "DigitalMark.Domain",
         "projectPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.Domain\\DigitalMark.Domain.csproj",
         "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricar\\source\\repos\\digitalMark\\DigitalMark.Domain\\obj\\",
+        "outputPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -110,7 +110,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.DTO\\DigitalMark.DTO.csproj": {
+                "projectPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.DTO\\DigitalMark.DTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -149,7 +153,7 @@
         "projectName": "DigitalMark.DTO",
         "projectPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.DTO\\DigitalMark.DTO.csproj",
         "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricar\\source\\repos\\digitalMark\\DigitalMark.DTO\\obj\\",
+        "outputPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -181,6 +185,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Flunt": {
+              "target": "Package",
+              "version": "[2.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -208,7 +218,7 @@
         "projectName": "DigitalMark.Infra.Data",
         "projectPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.Infra.Data\\DigitalMark.Infra.Data.csproj",
         "packagesPath": "C:\\Users\\ricar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricar\\source\\repos\\digitalMark\\DigitalMark.Infra.Data\\obj\\",
+        "outputPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

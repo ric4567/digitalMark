@@ -9,9 +9,10 @@ namespace Biblioteca.Livro.Infra.Data.Mappings
         public void Configure(EntityTypeBuilder<Project> builder)
         {
             builder.HasKey(x => x.Id);
+            builder.Ignore(x => x.IsValid);
+            builder.Ignore(x => x.Notifications);
             builder.Property(x => x.Id);
             builder.Property(x => x.Name);
-            builder.HasOne(x => x.Client).WithMany();
         }
     }
 }

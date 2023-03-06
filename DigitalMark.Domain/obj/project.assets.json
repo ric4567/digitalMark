@@ -1,11 +1,55 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Flunt/2.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flunt.dll": {}
+        }
+      },
+      "DigitalMark.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Flunt": "2.0.5"
+        },
+        "compile": {
+          "bin/placeholder/DigitalMark.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DigitalMark.DTO.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Flunt/2.0.5": {
+      "sha512": "CMgq8FUYjkHzyZT3PhkUwZyy79mudON+EL4b0SAT7BfIOJ2CNypwnbdA0cPHAM2CYQfO2L8ubNJCiBHQOIv2pA==",
+      "type": "package",
+      "path": "flunt/2.0.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flunt.2.0.5.nupkg.sha512",
+        "flunt.nuspec",
+        "icon.png",
+        "lib/netstandard2.0/Flunt.dll"
+      ]
+    },
+    "DigitalMark.DTO/1.0.0": {
+      "type": "project",
+      "path": "../DigitalMark.DTO/DigitalMark.DTO.csproj",
+      "msbuildProject": "../DigitalMark.DTO/DigitalMark.DTO.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "DigitalMark.DTO >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\ricar\\.nuget\\packages\\": {},
@@ -38,7 +82,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.DTO\\DigitalMark.DTO.csproj": {
+              "projectPath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.DTO\\DigitalMark.DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

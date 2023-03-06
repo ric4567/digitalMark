@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "U4Yb99qgjPz2NYyqVHpCRIbFsdZqok9F+ycH/E5PNSEXbQx8zEzof1qq5++KqwtzrzIuxMpdGnE8jry0J+4vZQ==",
+  "dgSpecHash": "DRcVtevmBKkkBu+gEVr3ihU8wdIe4PQ7wNm/vtxvdXj5HmTQsx2DejG05z+0eQWxQCCcNx6hDdo+bvMePJv/yA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ricar\\source\\repos\\DigitalMark\\DigitalMark.DTO\\DigitalMark.DTO.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ricar\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
   "logs": []
 }
