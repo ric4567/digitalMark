@@ -6,6 +6,6 @@
 
         void Update(T entity);
 
-        void RemoveAsync(T entity);
+        void Remove(T entity);
     }
 }

@@ -91,12 +91,13 @@ namespace DigitalMark.Domain.Handlers
             Client client = await _clientRepository.GetByIdAsync(id);
             if (client == null)
             {
-                return new DeleteClientResult(new List<Notification>() { new Notification("Projeto", "Projeto não encontrado") });
+                return new DeleteClientResult(new List<Notification>() { new Notification("Cliente", "Cliente não encontrado") });
             }
 
             try
             {
-                _clientRepository.RemoveAsync(client);
+                _clientRepository.Remove(client);
+                await _unitOfWork.SaveChangesAsync();
             }
             catch (Exception x)
             {

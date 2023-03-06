@@ -89,7 +89,8 @@ namespace DigitalMark.Domain.Handlers
 
             try
             {
-                _projectRepository.RemoveAsync(project);
+                _projectRepository.Remove(project);
+                await _unitOfWork.SaveChangesAsync();
             }
             catch (Exception x)
             {

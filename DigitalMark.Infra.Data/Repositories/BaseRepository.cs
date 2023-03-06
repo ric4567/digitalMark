@@ -18,7 +18,7 @@ namespace DigitalMark.Infra.Data.Repositories
             await _context.AddAsync(entity);
         }
 
-        public virtual void RemoveAsync(T entity)
+        public virtual void Remove(T entity)
         {
             _context.Remove(entity);
         }
